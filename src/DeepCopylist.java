@@ -16,7 +16,8 @@ public class DeepCopylist {
         }
         iter=head;
         while(iter!=null){
-        	iter.next.random = iter.random.next;
+        	if(iter.random!=null)
+        		iter.next.random = iter.random.next;
         	iter = iter.next.next;
         }
         RandomListNode pseudo = new RandomListNode(0);
