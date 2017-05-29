@@ -36,5 +36,4 @@ public class MinStack {
 		System.out.println(obj.getMin());
 		System.out.println(obj.top());
 	}
-
 }
