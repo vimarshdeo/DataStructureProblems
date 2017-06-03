@@ -36,7 +36,7 @@ public class TwitterDesign {
 		}
 	}
     /** Initialize your data structure here. */
-    public Twitter() {
+    public TwitterDesign() {
         map = new HashMap<Integer, User>();
     }
     
@@ -95,7 +95,7 @@ public class TwitterDesign {
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		TwitterDesign obj = new TwitterDesign();
 	}
 
 }
