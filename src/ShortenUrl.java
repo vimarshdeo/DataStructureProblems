@@ -9,6 +9,7 @@ public class ShortenUrl {
 			 str.append(arr.charAt(id%size));
 			 id = id/size;
 		 }
+		 while(str.length()<6) str.append("0");
 		 return str.reverse().toString();
  	 }
 	public static void main(String[] args) {
