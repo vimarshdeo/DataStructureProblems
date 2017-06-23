@@ -14,17 +14,19 @@ public class FindAnagrams {
         int count=p.length();
         while(right<s.length()){
         	if(find[s.charAt(right)]>=1){
-        		find[s.charAt(right)]--;
         		count--;
-        		right++;
         	}
+        	find[s.charAt(right)]--;
+        	right++;
         	if(count==0){
         		res.add(left);
         	}
-        	if(right-left==p.length() && find[s.charAt(left)]>=0){
+        	if(right-left==p.length()){
+        		if(find[s.charAt(left)]>=0){
+        			count++;
+        		}
         		find[s.charAt(left)]++;
         		left++;
-        		count++;
         	}
         }
         return res;
