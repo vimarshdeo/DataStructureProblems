@@ -31,9 +31,8 @@ public class lrucache {
 		head.next = node;
 	}
 	private void movetohead(DoubleList node){
-		DoubleList temp = node;
-		node = head.next;
-		head.next = temp;
+		this.removenode(node);
+		this.addnode(node);
 	}
 	private void removenode(DoubleList node){
 		DoubleList pre = node.prev;

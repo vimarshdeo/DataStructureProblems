@@ -24,7 +24,7 @@ public class TwoSumII {
 		// TODO Auto-generated method stub
 		TwoSumII obj = new TwoSumII();
 		int[] nums = {2, 7, 11, 15};
-		int target = 16;
+		int target = 18;
 		int[] res = obj.twoSum(nums, target);
 		System.out.println(res[0]+"\t"+res[1]);
 	}

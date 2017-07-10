@@ -22,7 +22,7 @@ public class MaximumProductSubArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MaximumProductSubArray obj = new MaximumProductSubArray();
-		int[] nums = {2,3,-2,4};
+		int[] nums = {-2,3,-2,4};
 		System.out.println(obj.maxProduct(nums));
 	}
 
