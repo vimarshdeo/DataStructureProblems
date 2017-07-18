@@ -15,7 +15,7 @@ public class RemoveDuplicateLetters {
 			count[index]--;
 			if(exist[index]) continue;
 			while(!stk.isEmpty()&&c<stk.peek()&&count[stk.peek()-'a']!=0){
-				exist[stk.peek()-'a'] = false;
+				exist[stk.pop()-'a'] = false;
 			}
 			stk.push(c);
 			exist[index] = true;

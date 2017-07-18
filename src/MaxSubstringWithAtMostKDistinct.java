@@ -2,7 +2,7 @@ import java.util.*;
 
 public class MaxSubstringWithAtMostKDistinct {
 	public int lengthOfLongestSubstringKDistinct(String s, int k) {
-		if(s==null||s.length()==0||s.length()<k) return 0;
+		if(s==null||s.length()==0) return 0;
 		HashMap<Character,Integer> map = new HashMap<>();
 		int maxlen = 0;
 		int left = 0;
