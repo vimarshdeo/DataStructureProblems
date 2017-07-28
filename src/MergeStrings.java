@@ -6,7 +6,7 @@ public class MergeStrings {
 		int[] arr = new int[26];
 		for(String s:strings){
 			for(int i=0;i<s.length();i++){
-				if(Character.isAlphabetic(s.charAt(i)) && Character.isLowerCase(s.charAt(i))){
+				if(Character.isLowerCase(s.charAt(i))){
 					arr[s.charAt(i)-'a']++;
 				}
 			}
